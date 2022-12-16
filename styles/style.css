@@ -195,6 +195,19 @@ input[type="search"] {
   .button--burger {
     display: none;
   }
+
+  /* 데스크탑 메인 메뉴 */
+  .menu {
+  }
+
+  .menu__list {
+  }
+
+  .menu__item {
+  }
+
+  .meun__link {
+  }
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
