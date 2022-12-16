@@ -4,41 +4,65 @@ body {
 .container {
   background: silver;
   border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.box1 {
+.group1 {
   background: gold;
 }
-.box2 {
+.group2 {
   background: pink;
 }
-.box3 {
+.group3 {
   background: lightgreen;
 }
-.box4 {
+.group4 {
   background: skyblue;
 }
-.box5 {
+.group5 {
   background: salmon;
 }
-.box6 {
+.group6 {
   background: violet;
 }
-.box7 {
+.group7 {
   background: aquamarine;
 }
-.box8 {
+.group8 {
   background: lightseagreen;
 }
-.box9 {
+.group9 {
   background: MediumPurple;
 }
-.box10 {
+.group10 {
   background: MidnightBlue;
 }
-.box11 {
+.group11 {
   background: Olive;
 }
-.box12 {
+.group12 {
   background: SandyBrown;
+}
+
+/* 모든 디바이스 */
+div[class*="group"] {
+  width: 100%;
+  height: 50px;
+}
+
+/* 768px 이상일 때 */
+@media (min-width: 768px) {
+  div[class*="group"] {
+    width: 50%;
+    height: 100px;
+  }
+}
+
+/* 1280px 이상일 때 */
+@media (min-width: 1280px) {
+  div[class*="group"] {
+    width: 25%;
+    height: 200px;
+  }
 }
