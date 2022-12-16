@@ -108,23 +108,48 @@ input[type="search"] {
 
   .buttonWrapper {
     background: gold;
+    overflow: hidden;
   }
 
   .button--burger {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background: blue;
+    position: relative;
   }
 
-  [class*=".button--burgerBar"] {
+  [class*="button--burgerBar"] {
     background: var(--white);
+    width: 100%;
+    height: 20%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    transition: all 200ms;
   }
 
   .button--burgerBarTop {
+    top: 0;
   }
   .button--burgerBarMiddle {
+    top: 50%;
+    transform: translateY(-50%);
   }
   .button--burgerBarBottom {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  .is--active .button--burgerBarTop {
+    top: 50%;
+    transform: translate(0%, -50%) rotate(-45deg);
+  }
+  .is--active .button--burgerBarMiddle {
+    transform: translate(-100%, -50%);
+  }
+  .is--active .button--burgerBarBottom {
+    top: 50%;
+    transform: translate(0%, -50%) rotate(45deg);
   }
 
   /* 모바일 메뉴 제어 버튼 종료 */
