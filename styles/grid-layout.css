@@ -48,25 +48,31 @@ body {
   border: 1px solid red;
   display: grid;
   grid-template-rows: auto;
+  padding: 24px;
+  gap: 24px;
+}
+
+[class*="group"] {
+  height: 150px;
 }
 
 /* Small Device */
 @media (max-width: 767px) {
   .container {
-    grid-template-columns: ;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 /* Medium Device */
 @media (min-width: 768px) {
   .container {
-    grid-template-columns: ;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Large Device */
 @media (min-width: 1280px) {
   .container {
-    grid-template-columns: ;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
