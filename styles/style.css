@@ -103,6 +103,10 @@ input[type="search"] {
   .searchForm__group .formInput {
     flex-grow: 1;
   }
+
+  /* 모바일 메뉴 제어 버튼 시작 */
+
+  /* 모바일 메뉴 제어 버튼 종료 */
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
@@ -129,6 +133,11 @@ input[type="search"] {
 
   .searchForm__group .formInput {
     width: 25rem;
+  }
+
+  /* 데스크탑 메인메뉴 제어버튼 */
+  .button--burger {
+    display: none;
   }
 }
 
