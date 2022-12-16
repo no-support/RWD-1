@@ -249,7 +249,6 @@ input[type="search"] {
     padding: var(--spacing-md) var(--spacing-lg);
     color: var(--white);
     font-size: 1.2rem;
-    font-weight: 700;
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
 }
