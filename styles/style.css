@@ -35,10 +35,10 @@
 }
 
 /* 공통 검색 폼 */
-/* input[type="search"] {
+input[type="search"] {
   -webkit-appearance: none;
   appearance: none;
-} */
+}
 
 .searchForm__group {
   display: flex;
