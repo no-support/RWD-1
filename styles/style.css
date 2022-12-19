@@ -99,6 +99,27 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 추천 서적 */
+.book {
+  background: lightgreen;
+}
+/* 공통 새소식 */
+.news {
+  background: yellow;
+}
+/* 공통 게시판 */
+.board {
+  background: lightsalmon;
+}
+/* 공통 인기 사이트 */
+.favorite {
+  background: skyblue;
+}
+/* 공통 트위터 */
+.twitter {
+  background: burlywood;
+}
+
 /* 모바일 디바이스 (Mobile Device) */
 @media (min-width: 320px) and (max-width: 768px) {
   /* 모바일 헤더 */
@@ -208,13 +229,8 @@ input[type="search"] {
 
   /* 모바일 메인 콘텐츠 */
   .appMain {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-  }
-
-  /* 모바일 새소식 */
-  .news {
-    grid-area: 1/1/2/3;
   }
 }
 
@@ -269,6 +285,10 @@ input[type="search"] {
     color: var(--white);
     font-size: 1.2rem;
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
+  }
+
+  /* 데스크탑 메인 콘텐츠 */
+  .appMain {
   }
 }
 
